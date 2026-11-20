@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 
 import websockets
 from event_validation import validate
+from simulation_storage import MemorySimulationStore, SimulationStore
 
 LOG = logging.getLogger(__name__)
 INSTANCE_ID = uuid4().hex
@@ -16,13 +17,15 @@ DEFAULT_URL = "ws://127.0.0.1:8001/ws/v0.1/simulation?client_role=system2"
 
 
 class SimulationReceiver:
-    def __init__(self, url=DEFAULT_URL, retry_initial=1.0, retry_max=30.0, heartbeat_interval=5.0):
+    def __init__(self, url=DEFAULT_URL, retry_initial=1.0, retry_max=30.0, heartbeat_interval=5.0,
+                 *, storage: SimulationStore | None = None):
         self.url = url
         self.receiver_id = "SYSTEM2"
         self.receiver_instance_id = INSTANCE_ID
         self.heartbeat_interval = heartbeat_interval
         self.retry_initial = retry_initial
         self.retry_max = retry_max
+        self.storage = storage if storage is not None else MemorySimulationStore()
         self.retired_runs = set()
         self.data = dict(connection="DISCONNECTED", synchronized=False,
                          run_id=None, seq=None, sync_cursor_seq=None, state=None, snapshot=None,
@@ -79,28 +82,8 @@ class SimulationReceiver:
             if r["counted_votes"] != r["target_ballots"]:
                 self.reject("EARLY_COMPLETED")
                 return False
-        if run != old_run and old_run is not None:
-            self.retired_runs.add(old_run)
-        if run != old_run:
-            self.data.update(last_acked_seq=None, last_ack_sent_at=None)
-        if kind in {"snapshot", "update"}:
-            snapshot = deepcopy(event)
-            if "catalog" not in snapshot:
-                snapshot["catalog"] = deepcopy(self.data["snapshot"]["catalog"])
-            self.data["snapshot"] = snapshot
-            self.data.update(last_applied_seq=seq, last_applied_at=datetime.now(timezone.utc).isoformat(),
-                             storage_state="MEMORY_APPLIED")
-        else:
-            # Status events have no votes. Preserve the last complete data.
-            self.data["snapshot"]["state"] = event["state"]
-        self.data.update(run_id=run, seq=cursor, sync_cursor_seq=cursor, state=event["state"],
-                         last_event=deepcopy(event), data_mode="MOCK", simulated=True,
-                         received_at=datetime.now(timezone.utc).isoformat())
-        self.data.update(validation_state="PASS", validation_errors=[],
-                         last_error=None, approval_blocked=True, publication_blocked=True)
-        self.data["verification_state"] = "REVIEW_REQUIRED"
-        # This stage has no independent human approval or article evidence.
-        self.data["accepted_events"] += 1
+        self.storage.apply_validated(event, cursor=cursor, state=self.data,
+                                     retired_runs=self.retired_runs)
         return True
 
     def reject(self, code):

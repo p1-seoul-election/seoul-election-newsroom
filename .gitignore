@@ -15,6 +15,8 @@
 !/system2_backend/main.py
 !/system2_backend/simulation_receiver.py
 !/system2_backend/event_validation.py
+!/system2_backend/simulation_storage.py
+!/system2_backend/test_step34_storage.py
 !/system2_backend/test_step24.py
 !/system2_backend/test_step25.py
 !/system2_backend/test_step27.py
