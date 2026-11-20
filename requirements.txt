@@ -1,0 +1,8 @@
+# Versions observed in both existing Python 3.12 environments.
+# Fresh-environment installation has not been tested in this preparation task.
+fastapi==0.165.0
+uvicorn==0.54.0
+websockets==17.4
+httpx==0.28.1
+pydantic==2.14.4
+tzdata==2026.6
