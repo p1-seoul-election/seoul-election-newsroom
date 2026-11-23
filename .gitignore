@@ -46,3 +46,6 @@
 /.aws/
 /.codex/
 /.agents/
+
+# SYSTEM 1 Frontend handoff (local artifacts excluded by its .gitignore)
+!/system1-frontend/
