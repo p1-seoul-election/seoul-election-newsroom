@@ -1,0 +1,208 @@
+/* v0.4.1: presentation-only refinement. AB palette and all data/state logic retained. */
+.analytics-shell{font-size:16px;line-height:1.55;font-variant-numeric:tabular-nums;padding:24px 32px}
+.analytics-shell header{gap:24px;margin-bottom:20px}
+.analytics-shell h1{font-size:26px}.analytics-shell h1 small{font-size:18px}
+.analytics-shell .eyebrow{font-size:12px;letter-spacing:1.5px;line-height:1.5}
+.analytics-shell .brandmark{font-size:34px}
+.analytics-shell .header-right{gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.analytics-shell .backend-status,.analytics-shell .mode,.analytics-shell .badge{font-size:14px}
+.analytics-shell .badge{letter-spacing:.3px;white-space:nowrap}
+.analytics-shell .notice{font-size:14px;padding:12px 18px;flex-wrap:wrap;gap:8px 16px;line-height:1.65}
+.analytics-shell .notice b{font-size:13px}
+.analytics-shell label,.analytics-shell .field-label,.analytics-shell .scope{font-size:14px;letter-spacing:0}
+.analytics-shell .controls{margin:20px 0;padding:20px 24px}
+.analytics-shell .control-top{gap:20px;grid-template-columns:1fr 1.05fr 1.25fr .8fr 1.1fr}
+.analytics-shell .control-top>*{min-width:0}
+.analytics-shell .control-title h2{font-size:20px;flex-wrap:wrap;gap:8px}
+.analytics-shell .control-top select{font-size:16px;padding:12px;min-height:48px}
+.analytics-shell .control-top .buttons{gap:8px}
+.analytics-shell .control-top .buttons button{font-size:16px;padding:13px 10px;min-height:48px}
+.analytics-shell .clock strong{font-size:32px;line-height:1.25;letter-spacing:1px}
+.analytics-shell .clock small,.analytics-shell .future-playback small{font-size:14px;line-height:1.5;margin-top:5px}
+.analytics-shell .future-playback{font-size:14px;padding-left:20px;gap:5px}
+.analytics-shell .future-playback b{font-size:20px;font-weight:600;color:#d5bd87}
+.analytics-shell .control-bottom{font-size:14px;line-height:1.6;flex-wrap:wrap;gap:10px 20px;margin-top:18px;padding-top:14px}
+.analytics-shell .control-bottom code{font-size:14px;overflow-wrap:anywhere}
+.analytics-shell .connection-toggle{font-size:14px;padding:8px 12px;min-height:40px}
+.analytics-shell .scenario-hint{font-size:14px;margin:10px 0 0;line-height:1.6}
+.analytics-shell .persistent-alert{font-size:16px;padding:16px 20px;gap:6px 20px;overflow-wrap:anywhere}
+.analytics-shell .analytics-main{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:24px;grid-template-rows:auto;align-items:start}
+.analytics-main>.candidates{grid-column:1;grid-row:1/4;align-self:start}
+.analytics-main>.district-analytics{grid-column:2;grid-row:1}
+.analytics-main>.historical{grid-column:2;grid-row:2}
+.analytics-main>.demographics{grid-column:2;grid-row:3;display:block}
+.analytics-shell .analytics-main .panel{padding:24px}
+.analytics-shell .section-title{align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.analytics-shell .analytics-main h2,.analytics-shell .diagnostics h2{font-size:22px;line-height:1.45}
+.analytics-shell h2 small{font-size:14px;line-height:1.5}
+.analytics-shell .overview{gap:24px;grid-template-columns:1.3fr .9fr .95fr}
+.analytics-shell .overview .progress-head{gap:12px;flex-wrap:wrap}
+.analytics-shell .overview .big-number{font-size:76px;line-height:1.15;letter-spacing:-2px;font-weight:750}
+.analytics-shell .overview .big-number span{font-size:34px}
+.analytics-shell .overview .target{padding:0;text-align:left}
+.analytics-shell .overview .target span,.analytics-shell .overview .target small{font-size:14px}
+.analytics-shell .overview .target strong{font-size:24px}
+.analytics-shell .overview-stats{padding-left:20px;gap:18px}
+.analytics-shell .overview-stats strong{font-size:30px;line-height:1.4;white-space:nowrap}
+.analytics-shell .overview-stats small{font-size:16px;margin-left:5px}
+.analytics-shell .gap{padding:16px;align-self:stretch;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.analytics-shell .gap strong{font-size:32px;line-height:1.3}
+.analytics-shell .gap strong small{font-size:16px;display:block;margin:4px 0 0}
+.analytics-shell .gap>span{font-size:14px}
+.analytics-shell .analytics-main .progress-track{height:10px;margin-top:20px}
+.analytics-shell .analytics-main .ticks{font-size:13px;line-height:1.5;margin:7px 0 20px;gap:10px}
+.analytics-shell .candidate-heading,.analytics-shell .candidate-row{grid-template-columns:minmax(240px,1.4fr) minmax(100px,1fr) minmax(115px,.6fr) minmax(110px,.6fr);gap:18px}
+.analytics-shell .candidate-heading{font-size:14px;padding:0 0 12px;line-height:1.5}
+.analytics-shell .candidate-heading>:nth-child(2){display:block}
+.analytics-shell .candidate-row{padding:16px 0;line-height:1.4;position:static}
+.analytics-shell .candidate-row>*{min-width:0}
+.analytics-shell .candidate-name{gap:12px}
+.analytics-shell .candidate-name strong{font-size:21px;line-height:1.4;font-weight:700}
+.analytics-shell .candidate-name strong small{font-size:15px;display:block;margin:3px 0 0;color:#b8c9d7;font-weight:400;line-height:1.5}
+.analytics-shell .candidate-name code{font-size:12px;margin-top:5px;color:#99aebe;overflow-wrap:anywhere}
+.analytics-shell .rank{font-size:24px;line-height:1.3;width:52px;text-align:center}
+.analytics-shell .rank small{font-size:12px;margin:4px 0 0;white-space:nowrap;color:#a5bbcb}
+.analytics-shell .candidate-dot{height:9px;width:9px;display:block}
+.analytics-shell .candidate-row>strong{font-size:28px;line-height:1.3;font-weight:750;text-align:right;white-space:nowrap}
+.analytics-shell .candidate-row>strong small{font-size:14px;font-weight:400;color:#acbfcd}
+.analytics-shell .candidate-row .candidate-bar{display:block;position:static;height:12px;min-width:0;border-radius:4px}
+.analytics-shell .trend{margin-top:22px;padding-top:18px}
+.analytics-shell .trend-heading{align-items:baseline;flex-wrap:wrap;gap:8px 16px}
+.analytics-shell .trend-heading h3{font-size:18px;line-height:1.5}
+.analytics-shell .trend-heading h3 small{font-size:14px;margin-left:10px}
+.analytics-shell .trend-heading>span{font-size:14px}
+.analytics-shell .trend svg{height:180px;width:100%;margin:16px 0 10px;overflow:visible}
+.analytics-shell .trend svg text{font-size:14px;fill:#bacbd7;line-height:1;letter-spacing:0}
+.analytics-shell .chart-legend{font-size:15px;line-height:1.6;gap:10px 24px;justify-content:flex-start}
+.analytics-shell .chart-legend span{white-space:nowrap}
+.analytics-shell .chart-legend i{width:9px;height:9px;margin-right:8px}
+.analytics-shell .chart-note,.analytics-shell .district-notice{font-size:14px;line-height:1.65;margin-top:14px;color:#b0c2d0}
+.analytics-shell .observations{padding-top:12px;margin-top:14px}
+.analytics-shell .observations summary{font-size:14px}
+.analytics-shell .snapshot{font-size:13px;line-height:1.7;gap:6px 16px;padding-top:14px;margin-top:16px;overflow-wrap:anywhere}
+.analytics-shell .district-notice{margin:0 0 18px}
+.analytics-shell .district-grid{gap:10px;grid-template-columns:repeat(5,minmax(0,1fr))}
+.analytics-shell .district-grid button{padding:13px 5px;min-height:50px;line-height:1.4}
+.analytics-shell .district-grid button strong{font-size:16px;line-height:1.4;font-weight:600;white-space:nowrap}
+.analytics-shell .district-detail{margin-top:20px;padding:18px}
+.analytics-shell .district-detail>div:first-child{gap:12px;flex-wrap:wrap}
+.analytics-shell .district-detail>div:first-child>strong{font-size:20px}
+.analytics-shell .district-detail code{font-size:14px}
+.analytics-shell .district-detail h3{font-size:16px;line-height:1.6;margin:12px 0}
+.analytics-shell .district-metrics{font-size:14px;gap:10px 22px;flex-wrap:wrap}
+.analytics-shell .district-detail p{font-size:14px;line-height:1.65;margin-top:14px}
+.analytics-shell .pending-data{gap:14px;margin:18px 0;align-items:flex-start}
+.analytics-shell .pending-symbol{font-size:34px;line-height:1.3}
+.analytics-shell .pending-data h3,.analytics-shell .demographics h3{font-size:17px;line-height:1.6;margin:0 0 10px}
+.analytics-shell .pending-data p,.analytics-shell .demographics p{font-size:14px;line-height:1.7}
+.analytics-shell .gate-list{font-size:14px;gap:8px 18px;margin:14px 0}
+.analytics-shell .demographics .section-title{margin-bottom:18px}
+.analytics-shell .demographics>.chart-note{font-size:14px;margin-top:14px}
+.analytics-shell>.diagnostics{margin:24px 0 0;padding:18px 24px}
+.analytics-shell .diagnostics>summary{gap:12px 20px;flex-wrap:wrap;line-height:1.6}
+.analytics-shell .diagnostics>summary>div{flex-wrap:wrap;gap:6px 16px}
+.analytics-shell .diagnostics>summary strong{font-size:16px}
+.analytics-shell .diag-summary,.analytics-shell .expand-label{font-size:14px;overflow-wrap:anywhere}
+.analytics-shell .diagnostic-content{grid-template-columns:minmax(270px,1fr) minmax(0,2fr);gap:28px;padding-top:20px;margin-top:20px}
+.analytics-shell .diagnostics .receiver .badge{font-size:14px}
+.analytics-shell .diagnostics dl>div{font-size:14px;padding:9px 0;gap:12px}
+.analytics-shell .diagnostics .evidence{font-size:13px;padding:12px;overflow-wrap:anywhere}
+.analytics-shell .diagnostics .events{grid-column:2;min-width:0}
+.analytics-shell .diagnostics .event-filter{font-size:14px;flex-wrap:wrap}
+.analytics-shell .diagnostics .event-filter select{font-size:14px;width:150px;padding:9px}
+.analytics-shell .diagnostics .event-scroll{max-height:340px}
+.analytics-shell table{font-size:14px}.analytics-shell th{font-size:14px}.analytics-shell td,.analytics-shell th{padding:10px 12px;line-height:1.6}
+.analytics-shell footer{font-size:12px;line-height:1.7;letter-spacing:.3px;flex-wrap:wrap;gap:8px 20px;margin-top:18px}
+.analytics-shell .modal{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:28px}
+.analytics-shell .modal h2{font-size:22px}.analytics-shell .modal p{font-size:16px;line-height:1.7}
+.analytics-shell .modal .buttons button{font-size:16px;padding:12px}
+
+@media(max-width:1599px){
+.analytics-shell{padding:24px}.analytics-shell header{align-items:flex-start}.analytics-shell .header-right{max-width:40%}
+.analytics-shell .control-top{grid-template-columns:1fr 1.15fr 1.3fr;gap:16px 24px}
+.analytics-shell .clock{grid-row:2;display:block}.analytics-shell .future-playback{grid-row:2;grid-column:2/4;flex-direction:row;align-items:center;flex-wrap:wrap;border:0;padding:0;gap:6px 20px}
+.analytics-shell .future-playback small{margin:0}.analytics-shell .control-bottom{margin-top:16px}
+.analytics-shell .analytics-main{grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:20px}
+.analytics-shell .analytics-main .panel{padding:20px}
+.analytics-shell .overview{grid-template-columns:1fr 1fr;gap:20px}
+.analytics-shell .overview .big-number{font-size:66px}
+.analytics-shell .gap{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px 20px;padding:14px 16px;flex-wrap:wrap}
+.analytics-shell .gap strong small{display:inline;margin-left:8px}
+.analytics-shell .candidate-heading,.analytics-shell .candidate-row{grid-template-columns:minmax(200px,1.5fr) minmax(70px,.7fr) minmax(95px,.65fr) minmax(95px,.65fr);gap:12px}
+.analytics-shell .candidate-name strong{font-size:20px}.analytics-shell .candidate-row>strong{font-size:24px}
+.analytics-shell .rank{width:42px}.analytics-shell .candidate-name{gap:8px}
+.analytics-shell .district-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.analytics-shell .overview-stats strong{font-size:28px}
+}
+@media(max-width:1199px){
+.analytics-shell .analytics-main{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.analytics-main>.candidates{grid-column:1/-1;grid-row:1}
+.analytics-main>.district-analytics{grid-column:1;grid-row:2/4}
+.analytics-main>.historical{grid-column:2;grid-row:2}
+.analytics-main>.demographics{grid-column:2;grid-row:3}
+.analytics-shell .header-right{max-width:35%}
+.analytics-shell .overview{grid-template-columns:1.2fr 1fr 1fr}
+.analytics-shell .gap{grid-column:auto;flex-direction:column;align-items:flex-start;justify-content:center}
+.analytics-shell .gap strong small{display:block;margin-left:0}
+.analytics-shell .diagnostic-content{grid-template-columns:1fr}
+.analytics-shell .diagnostics .events{grid-column:1}
+}
+@media(max-width:800px){
+.analytics-shell{padding:16px}.analytics-shell header{gap:12px;flex-wrap:wrap}.analytics-shell .brand{gap:12px}.analytics-shell .header-right{max-width:none;flex-direction:row;justify-content:flex-start;gap:8px 12px}
+.analytics-shell h1{font-size:22px}.analytics-shell h1 small{font-size:16px;margin:3px 0 0;display:block}
+.analytics-shell .analytics-main{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.analytics-main>.candidates,.analytics-main>.district-analytics,.analytics-main>.historical,.analytics-main>.demographics{grid-column:1;grid-row:auto}
+.analytics-shell .controls{padding:18px;margin:18px 0}
+.analytics-shell .control-top{grid-template-columns:1fr 1fr;gap:16px}
+.analytics-shell .control-title{grid-column:1/-1}.analytics-shell .scenario-select{grid-column:1/-1}
+.analytics-shell .control-top .buttons{grid-column:1/-1;grid-row:3}
+.analytics-shell .clock{grid-column:1;grid-row:4}
+.analytics-shell .future-playback{grid-column:2;grid-row:4;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.analytics-shell .control-bottom>[role=status]{flex-basis:100%}
+.analytics-shell .overview{grid-template-columns:1fr 1fr}
+.analytics-shell .overview .progress-head{grid-column:1/-1;justify-content:space-between}
+.analytics-shell .overview .target{display:block}
+.analytics-shell .overview .big-number{font-size:60px}
+.analytics-shell .gap{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:flex-start}
+.analytics-shell .overview-stats{grid-column:1/-1;border-left:0;padding-left:0;display:grid;grid-template-columns:1fr 1fr}
+.analytics-shell .district-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.analytics-shell .candidate-heading{display:none}
+.analytics-shell .candidate-row{grid-template-columns:1fr 1fr;gap:12px 16px;padding:18px 0;position:static}
+.analytics-shell .candidate-row .candidate-name{grid-column:1/-1;grid-row:1;gap:12px}
+.analytics-shell .candidate-row .candidate-bar{grid-column:1/-1;grid-row:3;position:static;height:10px;left:auto;right:auto;bottom:auto}
+.analytics-shell .candidate-row>strong:nth-child(3){grid-column:1;grid-row:2;text-align:left;padding-left:54px}
+.analytics-shell .candidate-row>strong:nth-child(4){grid-column:2;grid-row:2;text-align:right}
+.analytics-shell .candidate-row>strong::before{display:block;font-size:14px;font-weight:400;color:#b1c4d1;margin-bottom:5px}
+.analytics-shell .candidate-row>strong:nth-child(3)::before{content:'누적 득표수'}
+.analytics-shell .candidate-row>strong:nth-child(4)::before{content:'득표율'}
+.analytics-shell .candidate-name strong{font-size:20px}.analytics-shell .candidate-name strong small{font-size:15px}
+.analytics-shell .candidate-row>strong{font-size:26px}
+.analytics-shell .diag-summary{margin-left:0}
+.analytics-shell .notice b{display:block;margin-left:0}
+}
+@media(max-width:480px){
+.analytics-shell{padding:12px}.analytics-shell .analytics-main .panel{padding:18px 16px}.analytics-shell .controls{padding:18px 16px}
+.analytics-shell .eyebrow{font-size:11px;letter-spacing:1px}
+.analytics-shell .brandmark{font-size:28px}.analytics-shell h1{font-size:21px}.analytics-shell h1 small{font-size:14px}
+.analytics-shell .section-title{gap:10px;margin-bottom:18px}
+.analytics-shell .analytics-main h2{font-size:20px}
+.analytics-shell .overview{gap:16px}.analytics-shell .overview .big-number{font-size:56px}.analytics-shell .overview .big-number span{font-size:28px}
+.analytics-shell .overview .target strong{font-size:22px}.analytics-shell .overview .target span{font-size:13px}
+.analytics-shell .overview-stats strong{font-size:26px}.analytics-shell .overview-stats small{font-size:14px}
+.analytics-shell .gap{gap:8px 16px}.analytics-shell .gap strong{font-size:28px}
+.analytics-shell .analytics-main .ticks{font-size:12px;flex-wrap:wrap}
+.analytics-shell .analytics-main .ticks span:last-child{margin-left:auto}
+.analytics-shell .candidate-name strong small{font-size:14px}.analytics-shell .candidate-name code{font-size:12px;word-break:break-all}
+.analytics-shell .candidate-row>strong:nth-child(3){padding-left:0}
+.analytics-shell .district-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.analytics-shell .district-grid button{padding:13px 4px;min-height:50px}
+.analytics-shell .district-grid button strong{font-size:16px}
+.analytics-shell .clock strong{font-size:30px}.analytics-shell .future-playback b{font-size:18px}
+.analytics-shell .control-top .buttons button{font-size:15px;padding:12px 6px}
+.analytics-shell .trend-heading h3 small{display:block;margin:3px 0 0}
+.analytics-shell .trend svg{margin-top:12px}
+.analytics-shell .chart-legend{font-size:14px;gap:9px 18px}
+.analytics-shell .snapshot{font-size:12px}
+.analytics-shell .district-detail{padding:14px}
+.analytics-shell>.diagnostics{padding:16px}
+}

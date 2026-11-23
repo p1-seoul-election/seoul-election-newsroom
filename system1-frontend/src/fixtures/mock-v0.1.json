@@ -1,0 +1,1406 @@
+{
+  "metadata": {
+    "contract_version": "0.1",
+    "contract_status": "PROPOSAL_UNIMPLEMENTED",
+    "election_id": "0020260603",
+    "election_type": "GOVERNOR",
+    "data_mode": "MOCK",
+    "simulated": true,
+    "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+    "reference": {
+      "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+      "dataset_version": "processed_v0.1_20261120",
+      "verification_status": "REVIEW_REQUIRED",
+      "results_as_of": null,
+      "results_as_of_precision": "UNKNOWN",
+      "source_ids": [
+        "CSV_RESULTS",
+        "XLSX_COUNT",
+        "XLSX_TURNOUT",
+        "XLSX_CANDIDATES"
+      ]
+    },
+    "fixture_only": true,
+    "all_times_are_examples": true,
+    "backend_runtime_test": "NOT TESTED"
+  },
+  "catalog": {
+    "candidates": [
+      {
+        "candidate_id": "0020260603_SEOUL_C01",
+        "candidate_name": "정원오",
+        "ballot_number": 1,
+        "party_name": "더불어민주당",
+        "source_id": "XLSX_CANDIDATES"
+      },
+      {
+        "candidate_id": "0020260603_SEOUL_C02",
+        "candidate_name": "오세훈",
+        "ballot_number": 2,
+        "party_name": "국민의힘",
+        "source_id": "XLSX_CANDIDATES"
+      },
+      {
+        "candidate_id": "0020260603_SEOUL_C04",
+        "candidate_name": "김정철",
+        "ballot_number": 4,
+        "party_name": "개혁신당",
+        "source_id": "XLSX_CANDIDATES"
+      },
+      {
+        "candidate_id": "0020260603_SEOUL_C05",
+        "candidate_name": "유지혜",
+        "ballot_number": 5,
+        "party_name": "여성의당",
+        "source_id": "XLSX_CANDIDATES"
+      },
+      {
+        "candidate_id": "0020260603_SEOUL_C07",
+        "candidate_name": "권영국",
+        "ballot_number": 7,
+        "party_name": "정의당",
+        "source_id": "XLSX_CANDIDATES"
+      }
+    ],
+    "regions": [
+      {
+        "region_id": "SEOUL",
+        "region_name": "서울특별시",
+        "region_level": "CITY",
+        "parent_region_id": null,
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D01",
+        "region_name": "종로구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D02",
+        "region_name": "중구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D03",
+        "region_name": "용산구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D04",
+        "region_name": "성동구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D05",
+        "region_name": "광진구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D06",
+        "region_name": "동대문구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D07",
+        "region_name": "중랑구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D08",
+        "region_name": "성북구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D09",
+        "region_name": "강북구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D10",
+        "region_name": "도봉구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D11",
+        "region_name": "노원구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D12",
+        "region_name": "은평구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D13",
+        "region_name": "서대문구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D14",
+        "region_name": "마포구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D15",
+        "region_name": "양천구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D16",
+        "region_name": "강서구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D17",
+        "region_name": "구로구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D18",
+        "region_name": "금천구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D19",
+        "region_name": "영등포구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D20",
+        "region_name": "동작구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D21",
+        "region_name": "관악구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D22",
+        "region_name": "서초구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D23",
+        "region_name": "강남구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D24",
+        "region_name": "송파구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      },
+      {
+        "region_id": "SEOUL_D25",
+        "region_name": "강동구",
+        "region_level": "DISTRICT",
+        "parent_region_id": "SEOUL",
+        "source_id": "XLSX_COUNT"
+      }
+    ]
+  },
+  "scenarios": {
+    "normal": {
+      "description": "서버에서 실제 수신한 것이 아닌 UI 개발용 순서 예시",
+      "frames": [
+        {
+          "contract_version": "0.1",
+          "contract_status": "PROPOSAL_UNIMPLEMENTED",
+          "election_id": "0020260603",
+          "election_type": "GOVERNOR",
+          "data_mode": "MOCK",
+          "simulated": true,
+          "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+          "reference": {
+            "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+            "dataset_version": "processed_v0.1_20261120",
+            "verification_status": "REVIEW_REQUIRED",
+            "results_as_of": null,
+            "results_as_of_precision": "UNKNOWN",
+            "source_ids": [
+              "CSV_RESULTS",
+              "XLSX_COUNT",
+              "XLSX_TURNOUT",
+              "XLSX_CANDIDATES"
+            ]
+          },
+          "type": "snapshot",
+          "run_id": "MOCK_RUN_A",
+          "seq": 1,
+          "event_time": "2026-11-20T15:00:00+09:00",
+          "emitted_at": "2026-11-20T15:00:00+09:00",
+          "state": "IDLE",
+          "snapshot_id": "MOCK_RUN_A_S1",
+          "scope_region_ids": [
+            "SEOUL"
+          ],
+          "regions": [
+            {
+              "region_id": "SEOUL",
+              "target_ballots": 10000,
+              "target_ballots_basis": "SCENARIO_FIXED_EDUCATIONAL",
+              "counted_votes": 0,
+              "valid_votes": 0,
+              "invalid_votes": 0,
+              "count_rate_pct": 0,
+              "candidate_votes": [
+                {
+                  "candidate_id": "0020260603_SEOUL_C01",
+                  "votes": 0,
+                  "vote_share_pct": null
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C02",
+                  "votes": 0,
+                  "vote_share_pct": null
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C04",
+                  "votes": 0,
+                  "vote_share_pct": null
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C05",
+                  "votes": 0,
+                  "vote_share_pct": null
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C07",
+                  "votes": 0,
+                  "vote_share_pct": null
+                }
+              ]
+            }
+          ],
+          "catalog": {
+            "candidates": [
+              {
+                "candidate_id": "0020260603_SEOUL_C01",
+                "candidate_name": "정원오",
+                "ballot_number": 1,
+                "party_name": "더불어민주당",
+                "source_id": "XLSX_CANDIDATES"
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C02",
+                "candidate_name": "오세훈",
+                "ballot_number": 2,
+                "party_name": "국민의힘",
+                "source_id": "XLSX_CANDIDATES"
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C04",
+                "candidate_name": "김정철",
+                "ballot_number": 4,
+                "party_name": "개혁신당",
+                "source_id": "XLSX_CANDIDATES"
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C05",
+                "candidate_name": "유지혜",
+                "ballot_number": 5,
+                "party_name": "여성의당",
+                "source_id": "XLSX_CANDIDATES"
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C07",
+                "candidate_name": "권영국",
+                "ballot_number": 7,
+                "party_name": "정의당",
+                "source_id": "XLSX_CANDIDATES"
+              }
+            ],
+            "regions": [
+              {
+                "region_id": "SEOUL",
+                "region_name": "서울특별시",
+                "region_level": "CITY",
+                "parent_region_id": null,
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D01",
+                "region_name": "종로구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D02",
+                "region_name": "중구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D03",
+                "region_name": "용산구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D04",
+                "region_name": "성동구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D05",
+                "region_name": "광진구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D06",
+                "region_name": "동대문구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D07",
+                "region_name": "중랑구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D08",
+                "region_name": "성북구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D09",
+                "region_name": "강북구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D10",
+                "region_name": "도봉구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D11",
+                "region_name": "노원구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D12",
+                "region_name": "은평구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D13",
+                "region_name": "서대문구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D14",
+                "region_name": "마포구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D15",
+                "region_name": "양천구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D16",
+                "region_name": "강서구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D17",
+                "region_name": "구로구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D18",
+                "region_name": "금천구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D19",
+                "region_name": "영등포구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D20",
+                "region_name": "동작구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D21",
+                "region_name": "관악구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D22",
+                "region_name": "서초구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D23",
+                "region_name": "강남구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D24",
+                "region_name": "송파구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              },
+              {
+                "region_id": "SEOUL_D25",
+                "region_name": "강동구",
+                "region_level": "DISTRICT",
+                "parent_region_id": "SEOUL",
+                "source_id": "XLSX_COUNT"
+              }
+            ]
+          },
+          "sync_cursor_seq": 1
+        },
+        {
+          "contract_version": "0.1",
+          "contract_status": "PROPOSAL_UNIMPLEMENTED",
+          "election_id": "0020260603",
+          "election_type": "GOVERNOR",
+          "data_mode": "MOCK",
+          "simulated": true,
+          "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+          "reference": {
+            "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+            "dataset_version": "processed_v0.1_20261120",
+            "verification_status": "REVIEW_REQUIRED",
+            "results_as_of": null,
+            "results_as_of_precision": "UNKNOWN",
+            "source_ids": [
+              "CSV_RESULTS",
+              "XLSX_COUNT",
+              "XLSX_TURNOUT",
+              "XLSX_CANDIDATES"
+            ]
+          },
+          "type": "status",
+          "run_id": "MOCK_RUN_A",
+          "seq": 2,
+          "event_time": "2026-11-20T15:00:01+09:00",
+          "emitted_at": "2026-11-20T15:00:01+09:00",
+          "state": "RUNNING",
+          "reason": "STARTED",
+          "system2": {
+            "transport": "CONNECTED",
+            "receiver_state": "AWAITING_ACK",
+            "receiver_id": "SYSTEM2_LOCAL",
+            "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+            "connection_id": "MOCK_CONNECTION_A",
+            "run_id": "MOCK_RUN_A",
+            "last_sent_seq": 3,
+            "last_acked_seq": null,
+            "last_ack_at": null,
+            "last_heartbeat_at": "2026-11-20T15:00:03+09:00",
+            "ack_lag_events": null,
+            "ack_timeout_ms": 10000,
+            "heartbeat_timeout_ms": 15000,
+            "evidence_mode": "FIXTURE",
+            "live_verified": false
+          }
+        },
+        {
+          "contract_version": "0.1",
+          "contract_status": "PROPOSAL_UNIMPLEMENTED",
+          "election_id": "0020260603",
+          "election_type": "GOVERNOR",
+          "data_mode": "MOCK",
+          "simulated": true,
+          "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+          "reference": {
+            "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+            "dataset_version": "processed_v0.1_20261120",
+            "verification_status": "REVIEW_REQUIRED",
+            "results_as_of": null,
+            "results_as_of_precision": "UNKNOWN",
+            "source_ids": [
+              "CSV_RESULTS",
+              "XLSX_COUNT",
+              "XLSX_TURNOUT",
+              "XLSX_CANDIDATES"
+            ]
+          },
+          "type": "update",
+          "run_id": "MOCK_RUN_A",
+          "seq": 3,
+          "event_time": "2026-11-20T15:00:02+09:00",
+          "emitted_at": "2026-11-20T15:00:02+09:00",
+          "state": "RUNNING",
+          "snapshot_id": "MOCK_RUN_A_S3",
+          "scope_region_ids": [
+            "SEOUL"
+          ],
+          "regions": [
+            {
+              "region_id": "SEOUL",
+              "target_ballots": 10000,
+              "target_ballots_basis": "SCENARIO_FIXED_EDUCATIONAL",
+              "counted_votes": 2020,
+              "valid_votes": 2000,
+              "invalid_votes": 20,
+              "count_rate_pct": 20.2,
+              "candidate_votes": [
+                {
+                  "candidate_id": "0020260603_SEOUL_C01",
+                  "votes": 1000,
+                  "vote_share_pct": 50
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C02",
+                  "votes": 900,
+                  "vote_share_pct": 45
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C04",
+                  "votes": 40,
+                  "vote_share_pct": 2
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C05",
+                  "votes": 30,
+                  "vote_share_pct": 1.5
+                },
+                {
+                  "candidate_id": "0020260603_SEOUL_C07",
+                  "votes": 30,
+                  "vote_share_pct": 1.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "contract_version": "0.1",
+          "contract_status": "PROPOSAL_UNIMPLEMENTED",
+          "election_id": "0020260603",
+          "election_type": "GOVERNOR",
+          "data_mode": "MOCK",
+          "simulated": true,
+          "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+          "reference": {
+            "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+            "dataset_version": "processed_v0.1_20261120",
+            "verification_status": "REVIEW_REQUIRED",
+            "results_as_of": null,
+            "results_as_of_precision": "UNKNOWN",
+            "source_ids": [
+              "CSV_RESULTS",
+              "XLSX_COUNT",
+              "XLSX_TURNOUT",
+              "XLSX_CANDIDATES"
+            ]
+          },
+          "type": "status",
+          "run_id": "MOCK_RUN_A",
+          "seq": 4,
+          "event_time": "2026-11-20T15:00:04+09:00",
+          "emitted_at": "2026-11-20T15:00:04+09:00",
+          "state": "RUNNING",
+          "reason": "ACK_APPLIED",
+          "system2": {
+            "transport": "CONNECTED",
+            "receiver_state": "SYNCED",
+            "receiver_id": "SYSTEM2_LOCAL",
+            "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+            "connection_id": "MOCK_CONNECTION_A",
+            "run_id": "MOCK_RUN_A",
+            "last_sent_seq": 3,
+            "last_acked_seq": 3,
+            "last_ack_at": "2026-11-20T15:00:03+09:00",
+            "last_heartbeat_at": "2026-11-20T15:00:03+09:00",
+            "ack_lag_events": 0,
+            "ack_timeout_ms": 10000,
+            "heartbeat_timeout_ms": 15000,
+            "evidence_mode": "FIXTURE",
+            "live_verified": false
+          }
+        }
+      ],
+      "system2_to_system1_ack": {
+        "type": "ack",
+        "receiver_id": "SYSTEM2_LOCAL",
+        "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+        "connection_id": "MOCK_CONNECTION_A",
+        "run_id": "MOCK_RUN_A",
+        "acked_seq": 3,
+        "snapshot_id": "MOCK_RUN_A_S3",
+        "result": "APPLIED",
+        "received_at": "2026-11-20T15:00:02+09:00",
+        "applied_at": "2026-11-20T15:00:03+09:00",
+        "data_mode": "MOCK",
+        "simulated": true
+      },
+      "stop_response": {
+        "http_status": 200,
+        "body": {
+          "ok": true,
+          "request_id": "MOCK_CMD_STOP",
+          "run_id": "MOCK_RUN_A",
+          "state": "PAUSED",
+          "seq": 5
+        }
+      },
+      "stop_frame": {
+        "contract_version": "0.1",
+        "contract_status": "PROPOSAL_UNIMPLEMENTED",
+        "election_id": "0020260603",
+        "election_type": "GOVERNOR",
+        "data_mode": "MOCK",
+        "simulated": true,
+        "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+        "reference": {
+          "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+          "dataset_version": "processed_v0.1_20261120",
+          "verification_status": "REVIEW_REQUIRED",
+          "results_as_of": null,
+          "results_as_of_precision": "UNKNOWN",
+          "source_ids": [
+            "CSV_RESULTS",
+            "XLSX_COUNT",
+            "XLSX_TURNOUT",
+            "XLSX_CANDIDATES"
+          ]
+        },
+        "type": "status",
+        "run_id": "MOCK_RUN_A",
+        "seq": 5,
+        "event_time": "2026-11-20T15:00:05+09:00",
+        "emitted_at": "2026-11-20T15:00:05+09:00",
+        "state": "PAUSED",
+        "reason": "STOPPED"
+      },
+      "start_request": {
+        "method": "POST",
+        "path": "/api/v0.1/simulation/start",
+        "body": {
+          "request_id": "MOCK_CMD_START",
+          "expected_run_id": "MOCK_RUN_A",
+          "election_id": "0020260603",
+          "election_type": "GOVERNOR",
+          "scenario_id": "MOCK_SEOUL_10000_V01",
+          "data_mode": "MOCK",
+          "simulated": true
+        }
+      },
+      "start_response": {
+        "http_status": 200,
+        "body": {
+          "ok": true,
+          "request_id": "MOCK_CMD_START",
+          "run_id": "MOCK_RUN_A",
+          "state": "RUNNING",
+          "seq": 2
+        }
+      },
+      "status_response": {
+        "http_status": 200,
+        "body": {
+          "ok": true,
+          "run_id": "MOCK_RUN_A",
+          "state": "RUNNING",
+          "seq": 4,
+          "snapshot": {
+            "contract_version": "0.1",
+            "contract_status": "PROPOSAL_UNIMPLEMENTED",
+            "election_id": "0020260603",
+            "election_type": "GOVERNOR",
+            "data_mode": "MOCK",
+            "simulated": true,
+            "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+            "reference": {
+              "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+              "dataset_version": "processed_v0.1_20261120",
+              "verification_status": "REVIEW_REQUIRED",
+              "results_as_of": null,
+              "results_as_of_precision": "UNKNOWN",
+              "source_ids": [
+                "CSV_RESULTS",
+                "XLSX_COUNT",
+                "XLSX_TURNOUT",
+                "XLSX_CANDIDATES"
+              ]
+            },
+            "type": "update",
+            "run_id": "MOCK_RUN_A",
+            "seq": 3,
+            "event_time": "2026-11-20T15:00:02+09:00",
+            "emitted_at": "2026-11-20T15:00:02+09:00",
+            "state": "RUNNING",
+            "snapshot_id": "MOCK_RUN_A_S3",
+            "scope_region_ids": [
+              "SEOUL"
+            ],
+            "regions": [
+              {
+                "region_id": "SEOUL",
+                "target_ballots": 10000,
+                "target_ballots_basis": "SCENARIO_FIXED_EDUCATIONAL",
+                "counted_votes": 2020,
+                "valid_votes": 2000,
+                "invalid_votes": 20,
+                "count_rate_pct": 20.2,
+                "candidate_votes": [
+                  {
+                    "candidate_id": "0020260603_SEOUL_C01",
+                    "votes": 1000,
+                    "vote_share_pct": 50
+                  },
+                  {
+                    "candidate_id": "0020260603_SEOUL_C02",
+                    "votes": 900,
+                    "vote_share_pct": 45
+                  },
+                  {
+                    "candidate_id": "0020260603_SEOUL_C04",
+                    "votes": 40,
+                    "vote_share_pct": 2
+                  },
+                  {
+                    "candidate_id": "0020260603_SEOUL_C05",
+                    "votes": 30,
+                    "vote_share_pct": 1.5
+                  },
+                  {
+                    "candidate_id": "0020260603_SEOUL_C07",
+                    "votes": 30,
+                    "vote_share_pct": 1.5
+                  }
+                ]
+              }
+            ]
+          },
+          "system2": {
+            "transport": "CONNECTED",
+            "receiver_state": "SYNCED",
+            "receiver_id": "SYSTEM2_LOCAL",
+            "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+            "connection_id": "MOCK_CONNECTION_A",
+            "run_id": "MOCK_RUN_A",
+            "last_sent_seq": 3,
+            "last_acked_seq": 3,
+            "last_ack_at": "2026-11-20T15:00:03+09:00",
+            "last_heartbeat_at": "2026-11-20T15:00:03+09:00",
+            "ack_lag_events": 0,
+            "ack_timeout_ms": 10000,
+            "heartbeat_timeout_ms": 15000,
+            "evidence_mode": "FIXTURE",
+            "live_verified": false
+          },
+          "observed_at": "2026-11-20T15:00:04+09:00",
+          "data_mode": "MOCK",
+          "simulated": true
+        }
+      }
+    },
+    "error": {
+      "rest_invalid_mode": {
+        "http_status": 422,
+        "body": {
+          "ok": false,
+          "request_id": "MOCK_CMD_BAD",
+          "error": {
+            "code": "UNSUPPORTED_DATA_MODE",
+            "message": "이 계약에서는 MOCK만 허용합니다.",
+            "retryable": false,
+            "details": {
+              "field": "data_mode",
+              "expected": "MOCK",
+              "observed": "REAL_FINAL"
+            }
+          }
+        }
+      },
+      "invalid_incoming_update": {
+        "contract_version": "0.1",
+        "contract_status": "PROPOSAL_UNIMPLEMENTED",
+        "election_id": "0020260603",
+        "election_type": "GOVERNOR",
+        "data_mode": "MOCK",
+        "simulated": true,
+        "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+        "reference": {
+          "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+          "dataset_version": "processed_v0.1_20261120",
+          "verification_status": "REVIEW_REQUIRED",
+          "results_as_of": null,
+          "results_as_of_precision": "UNKNOWN",
+          "source_ids": [
+            "CSV_RESULTS",
+            "XLSX_COUNT",
+            "XLSX_TURNOUT",
+            "XLSX_CANDIDATES"
+          ]
+        },
+        "type": "update",
+        "run_id": "MOCK_RUN_A",
+        "seq": 3,
+        "event_time": "2026-11-20T15:00:02+09:00",
+        "emitted_at": "2026-11-20T15:00:02+09:00",
+        "state": "RUNNING",
+        "snapshot_id": "MOCK_RUN_A_S3",
+        "scope_region_ids": [
+          "SEOUL"
+        ],
+        "regions": [
+          {
+            "region_id": "SEOUL",
+            "target_ballots": 10000,
+            "target_ballots_basis": "SCENARIO_FIXED_EDUCATIONAL",
+            "counted_votes": 2019,
+            "valid_votes": 2000,
+            "invalid_votes": 20,
+            "count_rate_pct": 20.2,
+            "candidate_votes": [
+              {
+                "candidate_id": "0020260603_SEOUL_C01",
+                "votes": 1000,
+                "vote_share_pct": 50
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C02",
+                "votes": 900,
+                "vote_share_pct": 45
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C04",
+                "votes": 40,
+                "vote_share_pct": 2
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C05",
+                "votes": 30,
+                "vote_share_pct": 1.5
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C07",
+                "votes": 30,
+                "vote_share_pct": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      "expected_receiver_action": "합계 불일치로 미적용, ACK APPLIED 금지, 마지막 정상 snapshot 유지 및 재동기화",
+      "frame": {
+        "contract_version": "0.1",
+        "contract_status": "PROPOSAL_UNIMPLEMENTED",
+        "election_id": "0020260603",
+        "election_type": "GOVERNOR",
+        "data_mode": "MOCK",
+        "simulated": true,
+        "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+        "reference": {
+          "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+          "dataset_version": "processed_v0.1_20261120",
+          "verification_status": "REVIEW_REQUIRED",
+          "results_as_of": null,
+          "results_as_of_precision": "UNKNOWN",
+          "source_ids": [
+            "CSV_RESULTS",
+            "XLSX_COUNT",
+            "XLSX_TURNOUT",
+            "XLSX_CANDIDATES"
+          ]
+        },
+        "type": "error",
+        "run_id": "MOCK_RUN_A",
+        "seq": 6,
+        "event_time": "2026-11-20T15:00:06+09:00",
+        "emitted_at": "2026-11-20T15:00:06+09:00",
+        "state": "ERROR",
+        "error": {
+          "code": "TOTAL_MISMATCH",
+          "message": "유효표와 무효표의 합이 counted_votes와 다릅니다.",
+          "retryable": false,
+          "details": {
+            "expected": 2020,
+            "observed": 2019
+          }
+        },
+        "last_good_snapshot_id": "MOCK_RUN_A_S3"
+      }
+    },
+    "disconnected": {
+      "frame": {
+        "contract_version": "0.1",
+        "contract_status": "PROPOSAL_UNIMPLEMENTED",
+        "election_id": "0020260603",
+        "election_type": "GOVERNOR",
+        "data_mode": "MOCK",
+        "simulated": true,
+        "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+        "reference": {
+          "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+          "dataset_version": "processed_v0.1_20261120",
+          "verification_status": "REVIEW_REQUIRED",
+          "results_as_of": null,
+          "results_as_of_precision": "UNKNOWN",
+          "source_ids": [
+            "CSV_RESULTS",
+            "XLSX_COUNT",
+            "XLSX_TURNOUT",
+            "XLSX_CANDIDATES"
+          ]
+        },
+        "type": "status",
+        "run_id": "MOCK_RUN_A",
+        "seq": 7,
+        "event_time": "2026-11-20T15:00:22+09:00",
+        "emitted_at": "2026-11-20T15:00:22+09:00",
+        "state": "ERROR",
+        "reason": "SYSTEM2_DISCONNECTED",
+        "system2": {
+          "transport": "DISCONNECTED",
+          "receiver_state": "DISCONNECTED",
+          "receiver_id": "SYSTEM2_LOCAL",
+          "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+          "connection_id": "MOCK_CONNECTION_A",
+          "run_id": "MOCK_RUN_A",
+          "last_sent_seq": 3,
+          "last_acked_seq": 3,
+          "last_ack_at": "2026-11-20T15:00:03+09:00",
+          "last_heartbeat_at": "2026-11-20T15:00:03+09:00",
+          "ack_lag_events": 0,
+          "ack_timeout_ms": 10000,
+          "heartbeat_timeout_ms": 15000,
+          "evidence_mode": "FIXTURE",
+          "live_verified": false
+        }
+      },
+      "frontend_local_ws_close": {
+        "kind": "LOCAL_UI_STATE_NOT_SERVER_EVENT",
+        "transport": "DISCONNECTED",
+        "stale": true,
+        "last_good_snapshot_id": "MOCK_RUN_A_S3",
+        "display": "SYSTEM 1 연결 끊김; 마지막 정상 자료"
+      },
+      "expectation": "S1-S2 끊김은 S1이 status로 알림. FE-S1 끊김은 브라우저 close/error로 감지하며 서버 error 프레임을 기다리지 않음."
+    },
+    "reset": {
+      "request": {
+        "method": "POST",
+        "path": "/api/v0.1/simulation/reset",
+        "body": {
+          "request_id": "MOCK_CMD_RESET",
+          "expected_run_id": "MOCK_RUN_A"
+        }
+      },
+      "response": {
+        "http_status": 200,
+        "body": {
+          "ok": true,
+          "request_id": "MOCK_CMD_RESET",
+          "previous_run_id": "MOCK_RUN_A",
+          "run_id": "MOCK_RUN_B",
+          "state": "IDLE",
+          "seq": 1
+        }
+      },
+      "frame": {
+        "contract_version": "0.1",
+        "contract_status": "PROPOSAL_UNIMPLEMENTED",
+        "election_id": "0020260603",
+        "election_type": "GOVERNOR",
+        "data_mode": "MOCK",
+        "simulated": true,
+        "notice": "교육용 예시이며 역사적 개표 재현이 아닙니다.",
+        "reference": {
+          "source_snapshot_id": "P1_REAL_FINAL_dd6dba9ecf8b3c6d",
+          "dataset_version": "processed_v0.1_20261120",
+          "verification_status": "REVIEW_REQUIRED",
+          "results_as_of": null,
+          "results_as_of_precision": "UNKNOWN",
+          "source_ids": [
+            "CSV_RESULTS",
+            "XLSX_COUNT",
+            "XLSX_TURNOUT",
+            "XLSX_CANDIDATES"
+          ]
+        },
+        "type": "snapshot",
+        "run_id": "MOCK_RUN_B",
+        "seq": 1,
+        "event_time": "2026-11-20T15:00:30+09:00",
+        "emitted_at": "2026-11-20T15:00:30+09:00",
+        "state": "IDLE",
+        "reason": "RESET",
+        "previous_run_id": "MOCK_RUN_A",
+        "snapshot_id": "MOCK_RUN_B_S1",
+        "scope_region_ids": [
+          "SEOUL"
+        ],
+        "regions": [
+          {
+            "region_id": "SEOUL",
+            "target_ballots": 10000,
+            "target_ballots_basis": "SCENARIO_FIXED_EDUCATIONAL",
+            "counted_votes": 0,
+            "valid_votes": 0,
+            "invalid_votes": 0,
+            "count_rate_pct": 0,
+            "candidate_votes": [
+              {
+                "candidate_id": "0020260603_SEOUL_C01",
+                "votes": 0,
+                "vote_share_pct": null
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C02",
+                "votes": 0,
+                "vote_share_pct": null
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C04",
+                "votes": 0,
+                "vote_share_pct": null
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C05",
+                "votes": 0,
+                "vote_share_pct": null
+              },
+              {
+                "candidate_id": "0020260603_SEOUL_C07",
+                "votes": 0,
+                "vote_share_pct": null
+              }
+            ]
+          }
+        ],
+        "catalog": {
+          "candidates": [
+            {
+              "candidate_id": "0020260603_SEOUL_C01",
+              "candidate_name": "정원오",
+              "ballot_number": 1,
+              "party_name": "더불어민주당",
+              "source_id": "XLSX_CANDIDATES"
+            },
+            {
+              "candidate_id": "0020260603_SEOUL_C02",
+              "candidate_name": "오세훈",
+              "ballot_number": 2,
+              "party_name": "국민의힘",
+              "source_id": "XLSX_CANDIDATES"
+            },
+            {
+              "candidate_id": "0020260603_SEOUL_C04",
+              "candidate_name": "김정철",
+              "ballot_number": 4,
+              "party_name": "개혁신당",
+              "source_id": "XLSX_CANDIDATES"
+            },
+            {
+              "candidate_id": "0020260603_SEOUL_C05",
+              "candidate_name": "유지혜",
+              "ballot_number": 5,
+              "party_name": "여성의당",
+              "source_id": "XLSX_CANDIDATES"
+            },
+            {
+              "candidate_id": "0020260603_SEOUL_C07",
+              "candidate_name": "권영국",
+              "ballot_number": 7,
+              "party_name": "정의당",
+              "source_id": "XLSX_CANDIDATES"
+            }
+          ],
+          "regions": [
+            {
+              "region_id": "SEOUL",
+              "region_name": "서울특별시",
+              "region_level": "CITY",
+              "parent_region_id": null,
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D01",
+              "region_name": "종로구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D02",
+              "region_name": "중구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D03",
+              "region_name": "용산구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D04",
+              "region_name": "성동구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D05",
+              "region_name": "광진구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D06",
+              "region_name": "동대문구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D07",
+              "region_name": "중랑구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D08",
+              "region_name": "성북구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D09",
+              "region_name": "강북구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D10",
+              "region_name": "도봉구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D11",
+              "region_name": "노원구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D12",
+              "region_name": "은평구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D13",
+              "region_name": "서대문구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D14",
+              "region_name": "마포구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D15",
+              "region_name": "양천구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D16",
+              "region_name": "강서구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D17",
+              "region_name": "구로구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D18",
+              "region_name": "금천구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D19",
+              "region_name": "영등포구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D20",
+              "region_name": "동작구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D21",
+              "region_name": "관악구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D22",
+              "region_name": "서초구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D23",
+              "region_name": "강남구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D24",
+              "region_name": "송파구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            },
+            {
+              "region_id": "SEOUL_D25",
+              "region_name": "강동구",
+              "region_level": "DISTRICT",
+              "parent_region_id": "SEOUL",
+              "source_id": "XLSX_COUNT"
+            }
+          ]
+        },
+        "system2": {
+          "transport": "CONNECTED",
+          "receiver_state": "AWAITING_ACK",
+          "receiver_id": "SYSTEM2_LOCAL",
+          "receiver_instance_id": "MOCK_S2_INSTANCE_A",
+          "connection_id": "MOCK_CONNECTION_A",
+          "run_id": "MOCK_RUN_B",
+          "last_sent_seq": 1,
+          "last_acked_seq": null,
+          "last_ack_at": null,
+          "last_heartbeat_at": "2026-11-20T15:00:03+09:00",
+          "ack_lag_events": null,
+          "ack_timeout_ms": 10000,
+          "heartbeat_timeout_ms": 15000,
+          "evidence_mode": "FIXTURE",
+          "live_verified": false
+        },
+        "sync_cursor_seq": 1
+      }
+    }
+  }
+}

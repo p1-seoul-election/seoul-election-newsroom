@@ -1,0 +1,86 @@
+/* v0.4 layout layered over the preserved AB theme. */
+.analytics-shell{max-width:1920px;padding:20px 28px}
+.analytics-shell header{margin-bottom:14px}.analytics-shell h1{font-size:22px}.analytics-shell h1 small{font-size:17px}
+.backend-status{font-size:11px;color:#b2c1cd;border-left:1px solid #405369;padding-left:14px}
+.analytics-shell .controls{margin:14px 0;padding:16px 20px}
+.control-top{display:grid;grid-template-columns:1fr 1.05fr 1.2fr .7fr 1fr;gap:20px;align-items:center}
+.control-title h2{display:flex;gap:10px;align-items:center;font-size:16px}.control-top label{margin-bottom:5px}
+.control-top select{padding:9px 10px}.control-top .buttons button{padding:11px 8px}
+.clock strong{font-size:25px;line-height:1.1;font-variant-numeric:tabular-nums}.clock small{display:block;font-size:9px;color:#9bafbf}
+.future-playback{border-left:1px solid #405369;padding-left:20px;display:flex;flex-direction:column;font-size:11px;color:#b6c3cf}.future-playback b{font-size:20px;color:#c9a34a}.future-playback small{font-size:10px}
+.control-bottom{display:flex;gap:18px;align-items:center;border-top:1px solid #32485b;margin-top:12px;padding-top:9px;font-size:11px;color:#adbfcd}.control-bottom>[role=status]{flex:1}.control-bottom code{color:#d1dce6}
+.connection-toggle{padding:5px 10px;font-size:10px}.scenario-hint{color:#93a9b9;font-size:9px;margin:5px 0 0}
+.persistent-alert{margin:10px 0 14px;display:flex;flex-wrap:wrap;gap:8px 20px}
+.analytics-main{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:14px;grid-template-rows:auto}
+.analytics-main>.candidates{grid-column:1;grid-row:1/3}.analytics-main>.district-analytics{grid-column:2;grid-row:1}
+.analytics-main>.historical{grid-column:2;grid-row:2}.analytics-main>.demographics{grid-column:1/-1}
+.analytics-main .panel{padding:18px 20px}.analytics-main .section-title{margin-bottom:12px}.analytics-main h2{font-size:17px}
+.overview{display:grid;grid-template-columns:1.2fr 1fr .85fr;gap:20px;align-items:center}
+.overview .big-number{font-size:52px;line-height:1.2}.overview .big-number span{font-size:26px}
+.overview .target strong{font-size:18px}.overview .target span{font-size:10px}.overview .target{padding-left:10px}
+.overview-stats{display:flex;flex-direction:column;gap:7px;border-left:1px solid #32485b;padding-left:20px}
+.overview-stats strong{font-size:21px;line-height:1.2}.overview-stats small{font-size:11px;color:#a9bccb;margin-left:4px}
+.gap{border:1px solid #665a3d;background:#2a2d29;border-radius:5px;padding:12px}.gap strong{font-size:24px;display:block;color:#ead09a}.gap strong small{font-size:11px;margin-left:5px}.gap>span{font-size:10px;color:#bdc9c9}
+.analytics-main .progress-track{height:7px;margin-top:12px}.analytics-main .ticks{margin-bottom:12px}
+.analytics-main .candidate-heading,.analytics-main .candidate-row{grid-template-columns:1.8fr 1.4fr .65fr .65fr;gap:14px}
+.analytics-main .candidate-row{padding:7px 0}.analytics-main .candidate-name{gap:10px}.candidate-dot{height:8px;width:8px;flex-shrink:0;border-radius:50%}
+.analytics-main .candidate-name strong{font-size:15px}.analytics-main .candidate-name small{font-size:10px}
+.analytics-main .candidate-row>strong{font-size:17px}.rank{width:44px;flex-shrink:0;font-size:19px;text-align:center;font-variant-numeric:tabular-nums}.rank small{display:block;font-size:8px;color:#99adbc}
+.analytics-main .candidate-bar{display:block;height:9px}.analytics-main .candidate-bar>div{transition:width .5s ease}
+.trend{border-top:1px solid #32485b;padding-top:12px;margin-top:14px}.trend-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.trend-heading h3{font-size:13px;margin:0}.trend-heading h3 small{font-size:10px;color:#9bafbf;font-weight:400;margin-left:7px}.trend-heading>span{font-size:10px;color:#b4c6d5}
+.trend svg{width:100%;height:155px;display:block;margin-top:10px;overflow:visible}.trend svg text{font-family:inherit;font-size:10px;fill:#a5b7c5;stroke:none}.grid-line{stroke:#344959;stroke-dasharray:3 5}.time-line{stroke:#415664;stroke-dasharray:2 6}
+.chart-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:10px;justify-content:center}.chart-legend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}
+.chart-note{font-size:10px;color:#a4b6c5;margin:9px 0 0;line-height:1.6}.observations{margin-top:8px;padding-top:7px}.observations summary{font-size:10px}.table-scroll{overflow:auto}.snapshot{font-size:9px;margin-top:10px;padding-top:8px}
+.district-notice{font-size:11px;color:#b4c5d2;margin:0 0 12px}.district-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.district-grid button{padding:7px 4px;background:#10212f;border:1px solid #334b5e;border-radius:4px;text-align:center;font-weight:400}.district-grid button strong{font-size:12px;display:block}.district-grid button small{font-size:9px;color:#90a6b7}.district-grid button[aria-pressed=true]{border-color:#c9a34a;background:#31352c}.district-grid button[aria-pressed=true] strong{color:#efd59d}
+.district-detail{padding:12px 14px;border:1px solid #3f5363;background:#122331;border-radius:4px;margin-top:12px}.district-detail>div:first-child{display:flex;align-items:center;gap:12px}.district-detail code{font-size:10px;color:#93a9bc}.district-detail h3{font-size:12px;color:#c7d4de;margin:9px 0}.district-metrics{display:flex;gap:22px;font-size:10px;color:#a4b6c5}.district-metrics b{color:#cdd8e1;margin-left:5px}.district-detail p{font-size:10px;color:#98acbc;margin:8px 0 0}
+.pending-data{display:flex;gap:15px;align-items:center;margin:12px 0}.pending-symbol{font-size:32px;color:#c9a34a}.pending-data h3,.demographics h3{font-size:13px;margin:0 0 7px}.pending-data p,.demographics p{font-size:11px;color:#a8bdcd;margin:0;line-height:1.7}
+.analytics-main>.demographics{display:grid;grid-template-columns:1fr 1.5fr;gap:6px 25px;align-items:center}.demographics .section-title{margin:0}.demographics>.chart-note{grid-column:1/-1;font-size:10px}.gate-list{display:flex;gap:16px;flex-wrap:wrap;font-size:10px;color:#dac18e;margin-top:8px}.stat-row{display:flex;gap:12px}.stat-row meter{flex:1}
+.analytics-shell>.diagnostics{margin-top:14px;padding:12px 18px}.diagnostics>summary{display:flex;align-items:center;gap:20px;list-style:none;font-size:12px}.diagnostics>summary::-webkit-details-marker{display:none}.diagnostics>summary>div{display:flex;gap:16px;align-items:center}.diag-summary{color:#b1c4d1;margin-left:auto;font-size:10px}.expand-label{font-size:10px;color:#e5c981}
+.diagnostic-content{display:grid;grid-template-columns:1fr 2fr;gap:24px;margin-top:18px;border-top:1px solid #32485b;padding-top:16px}.diagnostics .receiver .badge{font-size:10px}.diagnostics .event-scroll{max-height:260px;overflow:auto}.diagnostics .events{min-width:0}.diagnostics .event-filter select{padding:5px;width:120px}.diagnostics .section-title{margin-bottom:10px}.diagnostics h2{font-size:14px}.diagnostics .receiver>.chart-note{display:block}
+@media(min-width:1600px) and (min-height:900px){
+.analytics-shell{padding:16px 28px}.analytics-shell .controls{margin:12px 0;padding:12px 18px}.analytics-main .panel{padding:14px 18px}.analytics-main .section-title{margin-bottom:8px}.analytics-main .candidate-row{padding:5px 0}.trend{padding-top:9px;margin-top:10px}.trend svg{height:125px}.analytics-main .district-grid button{padding:5px}.analytics-main .district-detail{padding:10px 12px}.analytics-main .snapshot{margin-top:7px}.analytics-shell footer{margin-top:9px}
+}
+@media(max-width:1399px){
+.control-top{grid-template-columns:1fr 1fr 1.1fr}.clock,.future-playback{grid-row:2}.clock{display:flex;gap:12px;align-items:center}.future-playback{grid-column:2/4;flex-direction:row;gap:14px;align-items:center;border:0;padding:0}
+.analytics-main{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}.analytics-main>.candidates{grid-row:1/3;grid-column:1}.analytics-main>.district-analytics{grid-row:1;grid-column:2}.analytics-main>.historical{grid-row:2;grid-column:2}
+.overview{grid-template-columns:1fr 1fr}.gap{grid-column:1/-1;padding:7px 12px;display:flex;align-items:center;gap:12px}.gap strong{font-size:20px}
+.analytics-main .candidate-heading,.analytics-main .candidate-row{grid-template-columns:1.8fr .7fr .65fr}.analytics-main .candidate-heading>:nth-child(2),.analytics-main .candidate-bar{display:none}.analytics-main .candidate-name small{display:block;margin:0}.rank{width:28px}
+.district-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.district-grid button strong{font-size:10px}.header-right{gap:9px}.header-right>strong{display:none}.analytics-shell h1 small{font-size:14px}
+}
+@media(max-width:950px){
+.analytics-main{grid-template-columns:1fr}.analytics-main>.candidates,.analytics-main>.district-analytics,.analytics-main>.historical,.analytics-main>.demographics{grid-column:1;grid-row:auto}.analytics-main>.demographics{display:block}.demographics .section-title{margin-bottom:14px}
+.control-top{grid-template-columns:1fr 1fr}.control-top .buttons{grid-column:1/-1;grid-row:2}.clock{grid-row:3;display:block}.future-playback{grid-column:2;grid-row:3;display:block}.future-playback span,.future-playback small{display:block}
+.diagnostic-content{grid-template-columns:1fr}.diagnostics>summary{flex-wrap:wrap;gap:8px}.diag-summary{margin-left:0}.analytics-shell .header-right{flex-direction:column;align-items:flex-end}.backend-status{border:0;padding:0;font-size:10px}
+}
+@media(max-width:600px){
+.analytics-shell{padding:12px}.analytics-shell h1{font-size:18px}.analytics-shell h1 small{font-size:11px;margin:0}.analytics-shell .brand{gap:10px}.analytics-shell .brandmark{font-size:23px}.analytics-shell .eyebrow{font-size:8px;letter-spacing:1px}
+.analytics-shell .controls,.analytics-main .panel{padding:14px}.control-top{gap:12px}.control-title h2{display:block;font-size:14px}.control-title .badge{margin-left:5px}
+.control-bottom{flex-wrap:wrap;gap:8px;font-size:10px}.control-bottom>[role=status]{flex-basis:100%}.scenario-hint{font-size:8px}
+.overview{gap:10px}.overview .big-number{font-size:42px}.overview .target{display:none}.overview-stats{padding-left:12px}.overview-stats strong{font-size:17px}
+.analytics-main .candidate-heading,.analytics-main .candidate-row{grid-template-columns:minmax(0,1.6fr) .65fr .65fr;gap:5px}.analytics-main .candidate-name{gap:5px}.analytics-main .candidate-name strong{font-size:12px}.analytics-main .candidate-name small{font-size:8px}.analytics-main .candidate-name code{font-size:7px;overflow-wrap:anywhere}.analytics-main .candidate-row>strong{font-size:13px}.candidate-dot{display:none}.rank{font-size:15px;width:24px}.rank small{font-size:7px}
+.trend-heading{flex-wrap:wrap;gap:5px}.trend svg{height:145px}.chart-legend{gap:10px;font-size:9px}.gate-list{gap:10px}.diagnostics>summary>div{gap:8px}.diagnostics>summary strong{font-size:11px}.diag-summary{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.analytics-main .candidate-bar>div,.progress-track>div{transition:none}}
+/* Keep distributions visible on laptops; prevent rank labels from inflating row heights. */
+.analytics-main .rank small{font-size:8px;margin:2px 0 0;white-space:nowrap;line-height:1.2;font-weight:400}
+.analytics-main .rank{line-height:1.2}
+@media(min-width:951px) and (max-width:1399px){
+.analytics-main .candidate-heading,.analytics-main .candidate-row{grid-template-columns:1.5fr .8fr .65fr .6fr;gap:10px}
+.analytics-main .candidate-heading>:nth-child(2),.analytics-main .candidate-bar{display:block}
+.analytics-main .candidate-name{gap:6px}.analytics-main .candidate-name strong{font-size:13px}.analytics-main .candidate-name code{font-size:8px}
+}
+@media(max-width:950px){
+.analytics-main .candidate-row{position:relative;padding-bottom:18px}
+.analytics-main .candidate-row .candidate-bar{display:block;position:absolute;left:34px;right:0;bottom:7px;height:5px}
+}
+@media(min-width:1600px) and (min-height:900px){
+.analytics-shell .controls{padding:10px 18px}.control-top{gap:16px}.control-bottom{margin-top:8px;padding-top:7px}.scenario-hint{margin-top:3px}
+.analytics-main>.candidates{grid-row:1/4}.analytics-main>.demographics{grid-column:2;grid-row:3;display:block}
+.demographics .section-title{margin-bottom:12px}.demographics .gate-list{gap:7px 14px}
+.analytics-main .district-grid button{padding:3px 4px}.district-detail{margin-top:9px}
+.analytics-main .district-detail{padding:8px 10px}.district-detail h3{margin:6px 0}.district-detail p{margin-top:5px}
+.analytics-main .candidate-row{padding:7px 0}.analytics-main .candidate-name small{margin-left:8px}
+.analytics-main .rank small{margin-left:0}.trend svg{height:170px}
+.analytics-main .pending-data{margin:8px 0}.analytics-main .pending-data p{font-size:10px}
+}
