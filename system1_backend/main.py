@@ -10,6 +10,7 @@ from fastapi.responses import JSONResponse
 from decimal import Decimal, ROUND_HALF_UP
 from datetime import datetime
 from zoneinfo import ZoneInfo
+from uuid import uuid4
 from pydantic import BaseModel
 from fastapi import HTTPException
 
@@ -101,7 +102,12 @@ def get_health():
 
 # SYSTEM 1 교육용 시뮬레이션 초기 데이터
 ELECTION_ID = "0020260603"
-RUN_ID = "MOCK_RUN_LOCAL_001"
+def create_run_id():
+    """Create a fresh MOCK run for process startup or Reset."""
+    return f"MOCK_RUN_{uuid4().hex}"
+
+
+RUN_ID = create_run_id()
 
 CANDIDATE_IDS = [
     "0020260603_SEOUL_C01",
@@ -548,9 +554,6 @@ def stop_simulation(request: StopSimulationRequest):
         "seq": simulation_state["seq"],
     }
 
-from uuid import uuid4
-
-
 class ResetSimulationRequest(BaseModel):
     request_id: str
     expected_run_id: str
@@ -570,7 +573,7 @@ def reset_simulation(request: ResetSimulationRequest):
         )
 
     # 새로운 시뮬레이션 실행 ID 생성
-    new_run_id = f"MOCK_RUN_{uuid4().hex[:12].upper()}"
+    new_run_id = create_run_id()
 
     
     # 새로운 실행 회차로 상태 초기화
